@@ -38,4 +38,4 @@ std::unordered_map<std::string, int> keyCode = {
 - The debounce time is brutal make sure you adjust it careful, reccommend to use 2, use max in your own risk:)
 - I'm kind of lazy to debug all the error that could possiblity happen make sure to fill all the input.
 - Feel free to pull request or fork this repo if you find any improvements.
-  
+## AFTER APPLY PLS PRESS L key to toggle it 
