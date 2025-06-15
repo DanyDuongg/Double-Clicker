@@ -10,7 +10,7 @@ Aim to entrance your Minecraft  gameplay
 - Window 10/11 (64-bit processors only)
 
 ## Credits
-- Credits to ##https://github.com/xy8q for his/her design in ##https://github.com/ocornut/imgui/issues/707
+- Credits to https://github.com/xy8q for his/her design in https://github.com/ocornut/imgui/issues/707
 
 ## Some notes
 ```keymap
