@@ -1,5 +1,6 @@
 ## Double-Clicker
-Aim to entrance your Minecraft  gameplay 
+- Aim to entrance your Minecraft  gameplay 
+
 ![Description](https://github.com/DanyDuongg/Double-Clicker/blob/main/Screenshot%20(112).png)
 
 
