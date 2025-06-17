@@ -712,6 +712,7 @@ void gui::Render() noexcept
 		}
 	}
 
+	static std::string applyMessage;// current message
 	if (ImGui::Button("Apply"))
 	{
 
@@ -719,6 +720,7 @@ void gui::Render() noexcept
 		{
 			isActive = false;
 			if (doubleClickThread.joinable()) doubleClickThread.join();
+			applyMessage = "Unapplied. Click 'Apply' button again to apply";
 		}
 
 		else
@@ -732,11 +734,16 @@ void gui::Render() noexcept
 			soption6 = config.selectedOption6;
 			soption8 = config.selectedOption7;
 			soption9 = config.selectedOption9;
+			applyMessage = "Successfully applied! Press 'L' key to toggle.";
 			// the int option not work so i try this
 			doubleClickThread = std::thread(doubleClick, std::ref(isActive),hobar1,hobar2,hobar3,hobar4,hobar5,hobar6,hobar7,hobar8,hobar9,inventoryKey);
 		}
 	}
 	
+	if (!applyMessage.empty())
+	{
+		ImGui::Text("%s", applyMessage.c_str());
+	}
 
 	
 
